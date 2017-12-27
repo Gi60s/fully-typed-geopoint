@@ -4,16 +4,16 @@ module.exports = GeoPoint;
 
 // Define the controller constructor
 function GeoPoint (config) {
-    if (config.latitude) {
-        validateRange(config.latitude, 'latitude');
+    if (config.latitudeRange) {
+        validateRange(config.latitudeRange, 'latitude');
     } else {
-        config.latitude = [-90, 90];
+        config.latitudeRange = [-90, 90];
     }
 
-    if (config.longitude) {
-        validateRange(config.longitude, 'longitude');
+    if (config.longitudeRange) {
+        validateRange(config.longitudeRange, 'longitude');
     } else {
-        config.longitude = [-180, 180];
+        config.longitudeRange = [-180, 180];
     }
 
     Object.freeze(config.latitude);
@@ -28,7 +28,7 @@ function GeoPoint (config) {
              * @name GeoPoint#latitudeRange
              * @type {Array.<number>}
              */
-            value: config.latitude,
+            value: config.latitudeRange,
             writable: false
         },
 
@@ -38,7 +38,7 @@ function GeoPoint (config) {
              * @name GeoPoint#latitudeRange
              * @type {Array.<number>}
              */
-            value: config.longitude,
+            value: config.longitudeRange,
             writable: false
         },
 

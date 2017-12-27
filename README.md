@@ -19,9 +19,9 @@ Typed.controllers.register(GeoPoint);
 
 // define a schema that uses the plugin
 const schema = Typed({
-    type: GeoPoint,         // or "geoPoint" as a string
-    latitude: [-90, 90],    // this is the default
-    longitude: [-180, 180]  // this is the default
+    type: GeoPoint,              // or "geoPoint" as a string
+    latitudeRange: [-90, 90],    // this is the default
+    longitudeRange: [-180, 180]  // this is the default
 });
 
 let error;
