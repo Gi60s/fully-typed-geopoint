@@ -1,6 +1,6 @@
 {
   "name": "fully-typed-geopoint",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A plugin for fully-typed that adds geo point validation.",
   "main": "index.js",
   "directories": {
@@ -14,6 +14,7 @@
     "url": "git+https://github.com/Gi60s/fully-typed-geopoint.git"
   },
   "keywords": [
+    "fully-typed",
     "geo-point"
   ],
   "author": "James Speirs <james.speirs@gmail.com>",
